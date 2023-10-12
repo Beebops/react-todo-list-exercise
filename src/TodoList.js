@@ -5,12 +5,10 @@ import Todo from './Todo'
 const TodoList = () => {
   const [todos, setTodos] = useState([])
 
-  // create a todo and add it to the todos array
   const makeTodo = (todoObj) => {
     setTodos((todos) => [...todos, todoObj])
   }
 
-  // delete a todo from the todos array
   const removeTodo = (id) => {
     setTodos((todos) => todos.filter((todo) => todo.id !== id))
   }
