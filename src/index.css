@@ -56,6 +56,11 @@ button {
   color: white;
 }
 
+.Todo p:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .addBtn {
   background-color: thistle;
   padding: 0.25em 0.5em;

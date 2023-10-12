@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 const TodoForm = ({ makeTodo }) => {
-  const INITIAL_STATE = { title: '' }
+  const INITIAL_STATE = { title: '', isCompleted: false }
   const [formData, setFormData] = useState(INITIAL_STATE)
 
   const handleSubmit = (evt) => {

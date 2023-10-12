@@ -15,12 +15,22 @@ const TodoList = () => {
     setTodos((todos) => todos.filter((todo) => todo.id !== id))
   }
 
+  const toggleCompletion = (id) => {
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) =>
+        todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
+      )
+    )
+  }
+
   const todoComponents = todos.map((todo) => (
     <Todo
       key={todo.id}
       id={todo.id}
       title={todo.title}
+      isCompleted={todo.isCompleted}
       removeTodo={removeTodo}
+      toggleCompletion={toggleCompletion}
     />
   ))
   return (
