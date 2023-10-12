@@ -28,7 +28,7 @@ const TodoForm = ({ makeTodo }) => {
         onChange={handleChange}
         autocomplete="off"
       />
-      <button>Add Todo</button>
+      <button className="addBtn">Add Todo</button>
     </form>
   )
 }

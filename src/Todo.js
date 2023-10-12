@@ -5,7 +5,9 @@ const Todo = ({ id, title, removeTodo }) => {
   return (
     <div className="Todo">
       <p>{title}</p>
-      <button onClick={remove}>❌</button>
+      <button className="removeBtn" onClick={remove}>
+        X
+      </button>
     </div>
   )
 }

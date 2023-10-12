@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: darkslateblue;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,13 +8,69 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  /* Reset all default styles */
+  margin: 0;
+  padding: 0.25em 0.5em;
+  border: none;
+  background: white;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: text;
+}
+
+button {
+  /* Reset all default styles */
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+.App {
+  display: flex;
+}
+
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  width: 90%;
+}
+
+.allTodos {
+  background-color: slateblue;
 }
 
 .Todo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 0.25em 0.5em;
+  color: white;
+}
+
+.addBtn {
+  background-color: thistle;
+  padding: 0.25em 0.5em;
+}
+
+.addBtn:hover {
+  background-color: orchid;
+}
+
+.removeBtn {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.removeBtn:hover {
+  color: black;
 }

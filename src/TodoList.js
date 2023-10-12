@@ -26,7 +26,7 @@ const TodoList = () => {
   return (
     <div className="TodoList">
       <TodoForm makeTodo={makeTodo} />
-      {todoComponents}
+      <div className="allTodos">{todoComponents}</div>
     </div>
   )
 }
